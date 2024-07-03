@@ -15,5 +15,7 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.api.nvim_set_option("clipboard", "unnamed")
+
 require "lazy_setup"
 require "polish"
